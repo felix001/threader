@@ -8,6 +8,7 @@ Usage
 =====
 
 ```
+
 >>> from threader import Threader
 >>> t = Threader(range(100))
 >>> t.run_threads()
