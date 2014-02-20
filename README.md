@@ -1,9 +1,11 @@
 Threader
 ========
 
-Multi-threader with threadpool. Currently configured to use a maximum of 12 threads.
+Multi-threader with threadpool. 
 
-To use create a mixin, then pass it a list of values. You can then process in value (i.e tasks) within your custom run_task function.
+To use, create a mixin, then pass it a list of values. You can then process each value (i.e tasks) within your custom run_task function.
+
+Note : Currently configured to use a maximum of 12 threads.
 
 Usage
 =====
