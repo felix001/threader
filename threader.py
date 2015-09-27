@@ -50,7 +50,7 @@ class ThreadPool(object):
         for t in self.threads:
             t.join()
 
-class Threader:
+class Threader(object):
     """
     multi threaded class. input list of tasks and return list of results.
     """
