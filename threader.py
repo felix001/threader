@@ -51,24 +51,22 @@ class Threader:
     multi threaded class. input list of tasks and return list of results.
     """
 
-    def __init__(self,tasks):
+    def __init__(self,tasks,max_pool=12):
         self.q = Queue.Queue()
-        self.results = {}
-        self.tasks = tasks 
+        self.results = dict()
+        self.tasks = tasks
+        self.max_threadpool = max_pool
 
     def _assign_task(self,q,task):
         self.q.put(self._run_task(task))
 
-    def _run_task(self,task):
-        # add task here
-        
-        self.results.update({task:"complete"})
+    def run_task(self,task):
+        # self.results.update({task:"complete"})
 
     def run_threads(self):
-        tp = ThreadPool(12)
+        tp = ThreadPool(self.max_pool)
         for i in self.tasks:
             tp.run_threads(self._assign_task, args=(self.q, i))
-            print tp.get_qsize()
         tp.join()
         tp.deactivate()
 
