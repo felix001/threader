@@ -59,7 +59,7 @@ class Threader(object):
         self.q = Queue.Queue()
         self.results = dict()
         self.tasks = tasks
-        self.max_threadpool = max_pool
+        self.max_pool = max_pool
 
     def _assign_task(self,q,task):
         self.q.put(self.run_task(task))
