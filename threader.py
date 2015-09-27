@@ -1,4 +1,8 @@
-import re,Queue,traceback,urllib2,glob
+import re
+import Queue
+import traceback
+import urllib2
+import glob
 from threading import Thread
 
 class ThreadPool(object):
@@ -58,9 +62,9 @@ class Threader:
         self.max_threadpool = max_pool
 
     def _assign_task(self,q,task):
-        self.q.put(self._run_task(task))
+        self.q.put(self.run_task(task))
 
-    def run_task(self,task):
+    #def run_task(self,task):
         # self.results.update({task:"complete"})
 
     def run_threads(self):
