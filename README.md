@@ -1,7 +1,7 @@
 Threader
 ========
 
-Multi-threader with threadpool. 
+Multi-threader with threadpool, allowing you to run multiple threads concurrently.
 
 Installation
 ============
