@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name="threader",
     version="1.0",
-    author="Ricky Donato",
-    author_email="123@gmail.com",
+    author="Rick Donato",
+    author_email="rickj07@gmail.com",
     description="Multi-threading module"
 )
