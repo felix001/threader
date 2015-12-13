@@ -3,6 +3,12 @@ Threader
 
 Multi-threader with threadpool. 
 
+Installation
+============
+
+`sudo pip install git+https://github.com/felix001/threader.git`
+
+
 Usage
 =====
 
