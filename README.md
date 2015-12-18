@@ -5,11 +5,10 @@ Multi-threader with threadpool, allowing you to run multiple threads concurrentl
 
 Installation
 ============
-HTTPS
-`sudo pip install git+https://github.com/felix001/threader.git`
 
-SSH
-`sudo pip install git+ssh://git@github.com/felix001/threader.git`
+`https - sudo pip install git+https://github.com/felix001/threader.git`
+
+`ssh - sudo pip install git+ssh://git@github.com/felix001/threader.git`
 
 
 Usage
