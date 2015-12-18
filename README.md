@@ -7,6 +7,7 @@ Installation
 ============
 HTTPS
 `sudo pip install git+https://github.com/felix001/threader.git`
+
 SSH
 `sudo pip install git+ssh://git@github.com/felix001/threader.git`
 
