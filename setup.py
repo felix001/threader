@@ -6,5 +6,5 @@ setup(
     author="Rick Donato",
     author_email="rickj07@gmail.com",
     description="Multi-threading module"
-    packages: ['threader'],
+    packages=['threader'],
 )
